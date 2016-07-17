@@ -1,0 +1,7 @@
+line_length:
+  - 200 #warning
+  - 300 #error
+
+file_length:
+  - 600  #warning
+  - 1200 #error
