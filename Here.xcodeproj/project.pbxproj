@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25429A771D3BC4650046E0A6 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25429A751D3BC4650046E0A6 /* FBSDKCoreKit.framework */; };
+		25429A781D3BC4650046E0A6 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25429A761D3BC4650046E0A6 /* FBSDKLoginKit.framework */; };
 		25C383861D39E1A200D35566 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C383851D39E1A200D35566 /* AppDelegate.swift */; };
-		25C383881D39E1A200D35566 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C383871D39E1A200D35566 /* ViewController.swift */; };
+		25C383881D39E1A200D35566 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C383871D39E1A200D35566 /* WelcomeViewController.swift */; };
 		25C3838B1D39E1A200D35566 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25C383891D39E1A200D35566 /* Main.storyboard */; };
 		25C3838D1D39E1A200D35566 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25C3838C1D39E1A200D35566 /* Assets.xcassets */; };
 		25C383901D39E1A200D35566 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25C3838E1D39E1A200D35566 /* LaunchScreen.storyboard */; };
 		25C3839B1D39E1A200D35566 /* HereTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C3839A1D39E1A200D35566 /* HereTests.swift */; };
+		DF324028EBC9C373A5D4410B /* Pods_Here.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47A1B589970568BA5639EE56 /* Pods_Here.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +29,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		041D18DC4FDD8137D1ECB9AE /* Pods-Here.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Here.release.xcconfig"; path = "Pods/Target Support Files/Pods-Here/Pods-Here.release.xcconfig"; sourceTree = "<group>"; };
+		25429A751D3BC4650046E0A6 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		25429A761D3BC4650046E0A6 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		25C383821D39E1A200D35566 /* Here.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Here.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25C383851D39E1A200D35566 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		25C383871D39E1A200D35566 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		25C383871D39E1A200D35566 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		25C3838A1D39E1A200D35566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		25C3838C1D39E1A200D35566 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25C3838F1D39E1A200D35566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +42,9 @@
 		25C383961D39E1A200D35566 /* HereTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HereTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25C3839A1D39E1A200D35566 /* HereTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HereTests.swift; sourceTree = "<group>"; };
 		25C3839C1D39E1A200D35566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25C4E1741D3BBFAB00C1A6A4 /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKMessengerShareKit.framework; path = "../../Downloads/FacebookSDKs-iOS-4.14.0/FBSDKMessengerShareKit.framework"; sourceTree = "<group>"; };
+		430B03078E964B7DDD80D584 /* Pods-Here.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Here.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Here/Pods-Here.debug.xcconfig"; sourceTree = "<group>"; };
+		47A1B589970568BA5639EE56 /* Pods_Here.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Here.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +52,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25429A771D3BC4650046E0A6 /* FBSDKCoreKit.framework in Frameworks */,
+				25429A781D3BC4650046E0A6 /* FBSDKLoginKit.framework in Frameworks */,
+				DF324028EBC9C373A5D4410B /* Pods_Here.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +74,8 @@
 				25C383841D39E1A200D35566 /* Here */,
 				25C383991D39E1A200D35566 /* HereTests */,
 				25C383831D39E1A200D35566 /* Products */,
+				5639557F37B1D51D6516380C /* Pods */,
+				8607F4FE0E4A20651E0F263C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,7 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				25C383851D39E1A200D35566 /* AppDelegate.swift */,
-				25C383871D39E1A200D35566 /* ViewController.swift */,
+				25C383871D39E1A200D35566 /* WelcomeViewController.swift */,
 				25C383891D39E1A200D35566 /* Main.storyboard */,
 				25C3838C1D39E1A200D35566 /* Assets.xcassets */,
 				25C3838E1D39E1A200D35566 /* LaunchScreen.storyboard */,
@@ -96,6 +110,26 @@
 			path = HereTests;
 			sourceTree = "<group>";
 		};
+		5639557F37B1D51D6516380C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				430B03078E964B7DDD80D584 /* Pods-Here.debug.xcconfig */,
+				041D18DC4FDD8137D1ECB9AE /* Pods-Here.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8607F4FE0E4A20651E0F263C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25429A751D3BC4650046E0A6 /* FBSDKCoreKit.framework */,
+				25429A761D3BC4650046E0A6 /* FBSDKLoginKit.framework */,
+				25C4E1741D3BBFAB00C1A6A4 /* FBSDKMessengerShareKit.framework */,
+				47A1B589970568BA5639EE56 /* Pods_Here.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +137,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 25C3839F1D39E1A200D35566 /* Build configuration list for PBXNativeTarget "Here" */;
 			buildPhases = (
+				82E382DE2E97F9BF1DB657D5 /* Check Pods Manifest.lock */,
 				25C3837E1D39E1A200D35566 /* Sources */,
 				25C3837F1D39E1A200D35566 /* Frameworks */,
 				25C383801D39E1A200D35566 /* Resources */,
+				8E789D861B88DD07CD166250 /* Embed Pods Frameworks */,
+				EB0D144FE24133124B694F03 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,12 +229,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		82E382DE2E97F9BF1DB657D5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8E789D861B88DD07CD166250 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Here/Pods-Here-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB0D144FE24133124B694F03 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Here/Pods-Here-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		25C3837E1D39E1A200D35566 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25C383881D39E1A200D35566 /* ViewController.swift in Sources */,
+				25C383881D39E1A200D35566 /* WelcomeViewController.swift in Sources */,
 				25C383861D39E1A200D35566 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,22 +412,34 @@
 		};
 		25C383A01D39E1A200D35566 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 430B03078E964B7DDD80D584 /* Pods-Here.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Fabric/iOS\"",
+					"~/Documents/FacebookSDK/**",
+				);
 				INFOPLIST_FILE = Here/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kbkdb.Here.Here;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kbkdb.Here;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		25C383A11D39E1A200D35566 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 041D18DC4FDD8137D1ECB9AE /* Pods-Here.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Fabric/iOS\"",
+					"~/Documents/FacebookSDK/**",
+				);
 				INFOPLIST_FILE = Here/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kbkdb.Here.Here;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kbkdb.Here;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -390,6 +487,7 @@
 				25C383A11D39E1A200D35566 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		25C383A21D39E1A200D35566 /* Build configuration list for PBXNativeTarget "HereTests" */ = {
 			isa = XCConfigurationList;
@@ -398,6 +496,7 @@
 				25C383A41D39E1A200D35566 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
