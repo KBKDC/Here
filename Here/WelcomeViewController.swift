@@ -13,8 +13,9 @@ import FBSDKLoginKit
 class WelcomeViewController: UIViewController, FBSDKLoginButtonDelegate {
 
     override func viewDidAppear(animated: Bool) {
-        if (FBSDKAccessToken.currentAccessToken() != nil) {
+        if FBSDKAccessToken.currentAccessToken() != nil {
             print("User Already Logged In")
+            self.performSegueWithIdentifier("showMain", sender: self)
         } else {
             print("User not Logged In")
             let loginView: FBSDKLoginButton = FBSDKLoginButton()
@@ -36,18 +37,15 @@ class WelcomeViewController: UIViewController, FBSDKLoginButtonDelegate {
 
     func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
         print("User Logged In")
-        
-        if ((error) != nil) {
-            
+        if (error) != nil {
         } else if result.isCancelled {
-            
         } else {
             if result.grantedPermissions.contains("email") {
-                
+                self.performSegueWithIdentifier("showMain", sender: self)
             }
         }
     }
-    
+
     func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
         print("User Logged Out")
     }

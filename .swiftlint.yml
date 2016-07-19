@@ -1,3 +1,13 @@
+excluded:
+  - Pods
+  - SwiftLint
+
+disabled_rules:
+  - type_name
+  - force_cast
+  - trailing_whitespace
+  - line_length
+
 line_length:
   - 200 #warning
   - 300 #error

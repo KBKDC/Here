@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Welcome View Controller-->
@@ -19,9 +20,90 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="xw9-Om-mLi" kind="presentation" identifier="showMain" id="Ye3-Gv-W2C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="ssI-2f-zcE">
+            <objects>
+                <viewController id="xw9-Om-mLi" customClass="MainViewController" customModule="Here" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XBk-f4-Pf0"/>
+                        <viewControllerLayoutGuide type="bottom" id="v0V-mX-7yN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EKh-tG-km4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YEN-O2-2i6">
+                                <rect key="frame" x="67" y="78" width="240" height="240"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FxD-fe-egi">
+                                <rect key="frame" x="67" y="373" width="240" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSr-n0-32F">
+                                <rect key="frame" x="67" y="436" width="240" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ne-xY-Zdh">
+                                <rect key="frame" x="67" y="528" width="240" height="30"/>
+                                <state key="normal" title="LOGOUT"/>
+                                <connections>
+                                    <action selector="logout:" destination="xw9-Om-mLi" eventType="touchUpInside" id="31s-Ej-m7C"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZSr-n0-32F" secondAttribute="trailing" constant="48" id="CR6-qB-lgU"/>
+                            <constraint firstItem="YEN-O2-2i6" firstAttribute="top" secondItem="XBk-f4-Pf0" secondAttribute="bottom" constant="58" id="Ci0-4l-Xw7"/>
+                            <constraint firstItem="ZSr-n0-32F" firstAttribute="top" secondItem="FxD-fe-egi" secondAttribute="bottom" constant="42" id="Co0-U7-3Pf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0Ne-xY-Zdh" secondAttribute="trailing" constant="48" id="DM6-FU-nLS"/>
+                            <constraint firstItem="YEN-O2-2i6" firstAttribute="leading" secondItem="EKh-tG-km4" secondAttribute="leadingMargin" constant="47" id="DmS-xM-1UY"/>
+                            <constraint firstItem="v0V-mX-7yN" firstAttribute="top" secondItem="0Ne-xY-Zdh" secondAttribute="bottom" constant="109" id="KQd-b7-Wa7"/>
+                            <constraint firstItem="YEN-O2-2i6" firstAttribute="top" secondItem="XBk-f4-Pf0" secondAttribute="bottom" constant="170" id="Nwk-wz-bSa"/>
+                            <constraint firstItem="ZSr-n0-32F" firstAttribute="leading" secondItem="EKh-tG-km4" secondAttribute="leadingMargin" constant="47" id="T5Z-TH-e48"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FxD-fe-egi" secondAttribute="trailing" constant="48" id="c5w-CH-xlZ"/>
+                            <constraint firstItem="v0V-mX-7yN" firstAttribute="top" secondItem="ZSr-n0-32F" secondAttribute="bottom" constant="210" id="fEy-ZH-6lr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YEN-O2-2i6" secondAttribute="trailing" constant="48" id="hS8-me-grf"/>
+                            <constraint firstItem="v0V-mX-7yN" firstAttribute="top" secondItem="YEN-O2-2i6" secondAttribute="bottom" constant="349" id="mh1-3z-AIh"/>
+                            <constraint firstItem="FxD-fe-egi" firstAttribute="leading" secondItem="EKh-tG-km4" secondAttribute="leadingMargin" constant="47" id="nsZ-C1-fG7"/>
+                            <constraint firstItem="0Ne-xY-Zdh" firstAttribute="leading" secondItem="EKh-tG-km4" secondAttribute="leadingMargin" constant="47" id="pFX-IW-vKl"/>
+                            <constraint firstItem="v0V-mX-7yN" firstAttribute="top" secondItem="YEN-O2-2i6" secondAttribute="bottom" constant="349" id="pQo-xv-fHK"/>
+                            <constraint firstItem="FxD-fe-egi" firstAttribute="top" secondItem="YEN-O2-2i6" secondAttribute="bottom" constant="55" id="r2d-AB-JVc"/>
+                            <constraint firstItem="0Ne-xY-Zdh" firstAttribute="top" secondItem="ZSr-n0-32F" secondAttribute="bottom" constant="71" id="rZ6-vW-Ad3"/>
+                            <constraint firstItem="ZSr-n0-32F" firstAttribute="top" secondItem="FxD-fe-egi" secondAttribute="bottom" constant="42" id="wZY-xC-aGn"/>
+                            <constraint firstItem="YEN-O2-2i6" firstAttribute="leading" secondItem="EKh-tG-km4" secondAttribute="leadingMargin" constant="47" id="xOh-K5-mew"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YEN-O2-2i6" secondAttribute="trailing" constant="48" id="yfE-j5-INb"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="DmS-xM-1UY"/>
+                                <exclude reference="Nwk-wz-bSa"/>
+                                <exclude reference="hS8-me-grf"/>
+                                <exclude reference="mh1-3z-AIh"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="userEmail" destination="ZSr-n0-32F" id="CEB-8V-qU5"/>
+                        <outlet property="userImage" destination="YEN-O2-2i6" id="cRJ-Lr-em8"/>
+                        <outlet property="userName" destination="FxD-fe-egi" id="7EY-E7-mo3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t6J-Cg-v8e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="986.5" y="217.5"/>
         </scene>
     </scenes>
 </document>

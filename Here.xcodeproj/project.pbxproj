@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2500286A1D3E3C73004B824A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250028691D3E3C73004B824A /* MainViewController.swift */; };
 		25429A771D3BC4650046E0A6 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25429A751D3BC4650046E0A6 /* FBSDKCoreKit.framework */; };
 		25429A781D3BC4650046E0A6 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25429A761D3BC4650046E0A6 /* FBSDKLoginKit.framework */; };
 		25C383861D39E1A200D35566 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C383851D39E1A200D35566 /* AppDelegate.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		041D18DC4FDD8137D1ECB9AE /* Pods-Here.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Here.release.xcconfig"; path = "Pods/Target Support Files/Pods-Here/Pods-Here.release.xcconfig"; sourceTree = "<group>"; };
+		250028691D3E3C73004B824A /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		25429A751D3BC4650046E0A6 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		25429A761D3BC4650046E0A6 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		25C383821D39E1A200D35566 /* Here.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Here.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +95,7 @@
 			children = (
 				25C383851D39E1A200D35566 /* AppDelegate.swift */,
 				25C383871D39E1A200D35566 /* WelcomeViewController.swift */,
+				250028691D3E3C73004B824A /* MainViewController.swift */,
 				25C383891D39E1A200D35566 /* Main.storyboard */,
 				25C3838C1D39E1A200D35566 /* Assets.xcassets */,
 				25C3838E1D39E1A200D35566 /* LaunchScreen.storyboard */,
@@ -296,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2500286A1D3E3C73004B824A /* MainViewController.swift in Sources */,
 				25C383881D39E1A200D35566 /* WelcomeViewController.swift in Sources */,
 				25C383861D39E1A200D35566 /* AppDelegate.swift in Sources */,
 			);
