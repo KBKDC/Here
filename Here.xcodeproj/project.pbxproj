@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2500286A1D3E3C73004B824A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250028691D3E3C73004B824A /* MainViewController.swift */; };
+		2500286F1D3E60B6004B824A /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2500286E1D3E60B6004B824A /* Crashlytics.framework */; };
 		25429A771D3BC4650046E0A6 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25429A751D3BC4650046E0A6 /* FBSDKCoreKit.framework */; };
 		25429A781D3BC4650046E0A6 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25429A761D3BC4650046E0A6 /* FBSDKLoginKit.framework */; };
 		25C383861D39E1A200D35566 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C383851D39E1A200D35566 /* AppDelegate.swift */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		041D18DC4FDD8137D1ECB9AE /* Pods-Here.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Here.release.xcconfig"; path = "Pods/Target Support Files/Pods-Here/Pods-Here.release.xcconfig"; sourceTree = "<group>"; };
 		250028691D3E3C73004B824A /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2500286E1D3E60B6004B824A /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
 		25429A751D3BC4650046E0A6 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		25429A761D3BC4650046E0A6 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		25C383821D39E1A200D35566 /* Here.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Here.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +58,7 @@
 			files = (
 				25429A771D3BC4650046E0A6 /* FBSDKCoreKit.framework in Frameworks */,
 				25429A781D3BC4650046E0A6 /* FBSDKLoginKit.framework in Frameworks */,
+				2500286F1D3E60B6004B824A /* Crashlytics.framework in Frameworks */,
 				DF324028EBC9C373A5D4410B /* Pods_Here.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,6 +103,7 @@
 				25C3838C1D39E1A200D35566 /* Assets.xcassets */,
 				25C3838E1D39E1A200D35566 /* LaunchScreen.storyboard */,
 				25C383911D39E1A200D35566 /* Info.plist */,
+				2500286E1D3E60B6004B824A /* Crashlytics.framework */,
 			);
 			path = Here;
 			sourceTree = "<group>";
@@ -147,6 +151,7 @@
 				8E789D861B88DD07CD166250 /* Embed Pods Frameworks */,
 				EB0D144FE24133124B694F03 /* Copy Pods Resources */,
 				25ABD3E21D3BCDC200BCFF99 /* ShellScript */,
+				2500286B1D3E575D004B824A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -234,6 +239,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2500286B1D3E575D004B824A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run e39f52ebb07dfd41ad86f748bfe7c4f477addf58 4a4684a6af46a21bb4f517920116a1650f44f7eaf16e494fc7b57aeeaf73dc4a";
+		};
 		25ABD3E21D3BCDC200BCFF99 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -437,6 +455,7 @@
 					"$(inherited)",
 					"\"${PODS_ROOT}/Fabric/iOS\"",
 					"~/Documents/FacebookSDK/**",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Here/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -454,6 +473,7 @@
 					"$(inherited)",
 					"\"${PODS_ROOT}/Fabric/iOS\"",
 					"~/Documents/FacebookSDK/**",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Here/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
